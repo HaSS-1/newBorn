@@ -1,0 +1,4 @@
+.main-container {
+    padding: var(--padding-primary);
+    background-color: rgb(39, 39, 39);
+}
