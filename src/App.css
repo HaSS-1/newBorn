@@ -2,7 +2,7 @@
     /* Colors variables */
     --color-dark: #27292a;
     --color-darkest: #1f2122;
-    --color-light: rgb(219, 219, 219);
+    --color-light: #fff;
     --color-primary: #ec6090;
 
     --color-bg-body: var(--color-darkest);
@@ -24,5 +24,13 @@
 body {
     background-color: var(--color-bg-body);
     font-family: var(--font-family-primary);
+    color: var(--color-light)
+}
 
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
 }
