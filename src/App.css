@@ -1,38 +1,28 @@
-.App {
-  text-align: center;
+:root {
+    /* Colors variables */
+    --color-dark: #27292a;
+    --color-darkest: #1f2122;
+    --color-light: rgb(219, 219, 219);
+    --color-primary: #ec6090;
+
+    --color-bg-body: var(--color-darkest);
+
+    /* Spacing variables */
+    --dist-primary: 50px;
+    --padding-primary: var(--dist-primary);
+    --margin-primary: var(--dist-primary);
+    --border-radius-primary: calc(var(--dist-primary) / 2);
+
+    /* Font size variables */
+    --font-family-primary: 'Poppins', sans-serif;
+    --font-weight-bold: 900;
+    --font-weight-normal: 400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,900&display=swap');
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+body {
+    background-color: var(--color-bg-body);
+    font-family: var(--font-family-primary);
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
