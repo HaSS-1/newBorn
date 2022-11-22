@@ -1,83 +1,40 @@
 import "./MostPopular.css"
+
 import popular_01 from "../../assets/images/popular_01.jpg"
+import popular_02 from "../../assets/images/popular_02.jpg"
+import popular_03 from "../../assets/images/popular_03.jpg"
+import popular_04 from "../../assets/images/popular_04.jpg"
+
+import { Card, SectionWrapper, SectionHeader } from "../../components/index"
+
+
+
 const MostPopular = () => {
     return (
-        <div className="section-wrapper">
-            <div className="section-header">
-                <h4>Most Popular</h4>
-            </div>
-            <div className="most-popular-items">
-                <div className="most-popular-item">
-                    <div className="card-wrapper">
-                        <img className="most-popular-item-img" src={popular_01} />
-                        <div className="most-popular-content">
-                            <h4 className="most-popular-item-title">
-                                Movies_API <br />
-                                <span>Movies Web App</span>
-                            </h4>
-                            <ul>
-                                <li><span>1.0</span></li>
-                                <li><span>2022</span></li>
 
-                            </ul>
-                        </div>
-                    </div>
+        <>
+            <SectionWrapper>
+                <SectionHeader>one Most Popular</SectionHeader>
+                <div className="most-popular-items">
+
+                    <Card image={popular_01} title="Project 1" technology="JavaScript" date="2022" version="0.0.1" />
+                    <Card image={popular_02} title="Project 2" technology="Ract" date="2022" version="0.1.1" />
+                    <Card image={popular_03} title="Project 3" technology="Laravel" date="2022" version="0.1" />
+                    <Card image={popular_04} title="Project 4" technology="Bootstrap" date="2021" version="0.2.1" />
+
+                    <Card image={popular_04} title="Project 1" technology="JavaScript" date="2022" version="0.0.1" />
+                    <Card image={popular_03} title="Project 2" technology="Ract" date="2022" version="0.1.1" />
+                    <Card image={popular_02} title="Project 3" technology="Laravel" date="2022" version="0.1" />
+                    <Card image={popular_01} title="Project 4" technology="Bootstrap" date="2021" version="0.2.1" />
+
+
+
+
+
                 </div>
+            </SectionWrapper>
 
-                <div className="most-popular-item">
-                    <div className="card-wrapper">
-                        <img className="most-popular-item-img" src={popular_01} />
-                        <div className="most-popular-content">
-                            <h4 className="most-popular-item-title">
-                                Movies_API <br />
-                                <span>Movies Web App</span>
-                            </h4>
-                            <ul>
-                                <li><span>1.0</span></li>
-                                <li><span>2022</span></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="most-popular-item">
-                    <div className="card-wrapper">
-                        <img className="most-popular-item-img" src={popular_01} />
-                        <div className="most-popular-content">
-                            <h4 className="most-popular-item-title">
-                                Movies_API <br />
-                                <span>Movies Web App</span>
-                            </h4>
-                            <ul>
-                                <li><span>1.0</span></li>
-                                <li><span>2022</span></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="most-popular-item">
-                    <div className="card-wrapper">
-                        <img className="most-popular-item-img" src={popular_01} />
-                        <div className="most-popular-content">
-                            <h4 className="most-popular-item-title">
-                                Movies_API <br />
-                                <span>Movies Web App</span>
-                            </h4>
-                            <ul>
-                                <li><span>1.0</span></li>
-                                <li><span>2022</span></li>
-
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
+        </>
     )
 }
 
