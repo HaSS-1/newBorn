@@ -1,4 +1,11 @@
 .main-container {
+<<<<<<< HEAD
     padding: var(--padding-primary);
     background-color: rgb(39, 39, 39);
+=======
+    background-color: rgb(39, 39, 39);
+    padding: var(--padding-primary);
+    border-radius: var(--border-radius-primary);
+
+>>>>>>> Dev
 }

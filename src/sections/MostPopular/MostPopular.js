@@ -1,4 +1,5 @@
 import "./MostPopular.css"
+<<<<<<< HEAD
 import popular_01 from "../../assets/images/popular_01.jpg"
 const MostPopular = () => {
     return (
@@ -78,6 +79,27 @@ const MostPopular = () => {
 
             </div>
         </div>
+=======
+import { Card, SectionWrapper, SectionHeader } from "../../components/index"
+import MostPopularData from '../../Data/MostPopularData'
+
+
+const MostPopular = () => {
+    const cards = MostPopularData.map(card => {
+        return <Card key={card.id} image={card.image} title={card.title} technology={card.technology} date={card.date} version={card.version} />
+
+    })
+
+    return (
+        <>
+            <SectionWrapper>
+                <SectionHeader>one Most Popular</SectionHeader>
+                <div className="most-popular-items">
+                    {cards}
+                </div>
+            </SectionWrapper>
+        </>
+>>>>>>> Dev
     )
 }
 
