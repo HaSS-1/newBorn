@@ -1,7 +1,6 @@
 import popular_01 from '../assets/images/popular_01.jpg'
 import popular_02 from '../assets/images/popular_02.jpg'
 import popular_03 from '../assets/images/popular_03.jpg'
-
 import popular_05 from '../assets/images/popular_05.png'
 import popular_06 from '../assets/images/popular_06.jpg'
 import popular_09 from '../assets/images/popular_09.jpg'
