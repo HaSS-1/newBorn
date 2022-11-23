@@ -1,6 +1,6 @@
 import "./Card.css"
 
-import { FaStar, FaEye } from "react-icons/fa"
+import { FaBeer, FaStar, FaEye, FaBaby } from "react-icons/fa"
 
 
 const Card = (props) => {
@@ -14,7 +14,7 @@ const Card = (props) => {
                         <span>{props.technology}</span>
                     </h4>
                     <ul>
-                        <li><span style={{ "color": "yellow" }}><FaStar /></span> <span>{props.date}</span></li>
+                        <li><span style={{ "color": "yellow" }}><FaBeer /></span> <span>{props.date}</span></li>
                         <li><span style={{ "color": "var(--color-primary)" }}><FaEye /></span><span>{props.version}</span></li>
 
                     </ul>
